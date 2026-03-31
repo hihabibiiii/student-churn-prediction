@@ -6,9 +6,7 @@ st.set_page_config(page_title="Student Churn Prediction", layout="centered")
 st.title("🎓 Student Dropout Prediction System")
 st.markdown("### Enter Student Details")
 
-# -----------------------------
 # Input Fields
-# -----------------------------
 age = st.number_input("Age", 18, 30, 21)
 gender = st.selectbox("Gender", ["Male", "Female"])
 income = st.number_input("Family Income", 0, 100000, 25000)
@@ -27,9 +25,7 @@ semester = st.selectbox("Semester", ["Year 1", "Year 2", "Year 3", "Year 4"])
 dept = st.selectbox("Department", ["Engineering", "Arts", "Business", "CS"])
 parent = st.selectbox("Parental Education", ["High School", "Bachelor", "Master"])
 
-# -----------------------------
 # Button
-# -----------------------------
 if st.button("🔍 Predict"):
 
     data = {
